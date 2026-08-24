@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 10px 12px;
+            border: 1px solid red;
+            margin: 10px 45px;
+
+            /* box-shadow: offset-x offset-y color;
+    box-shadow: 10px 11px coral;
+/* box-shadow: offset-x offset-y blur-radius color */
+            box-shadow: 10px 10px 5px #008051; 
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color */
+            /*box-shadow: 10px 10px 15px 10px tomato; */
+          /*  box-shadow: -10px -10px 5px 10px rgba(red, green, blue, 0.5)*/
+                /* a(alpha) tells how much color is dark */
+        }
+
+        .card h2{
+            text-shadow: 2px 2px 2px rgb(12, 230, 26);
+        }
+        .card input{
+            border: 1px solid tomato;
+            border-radius: 15px;
+            padding: 6px;
+        }
+        .card button{
+             border: 1px solid tomato;
+            border-radius: 15px;
+            padding: 6px;
+            width: 100px;
+        }
+        button:hover{
+            cursor: pointer;
+            color: rgb(83, 217, 6);
+        }
+        input:hover{
+            background-color: rgba(143, 177, 91, 0.532);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is vijju tripathi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis, soluta labore dolores
+                inventore id dolor molestiae officiis temporibus ratione tempora explicabo aspernatur? Magni vel iusto
+                explicabo odio repellendus beatae?</p>
+                <input type="text" placeholder="say hello to vijju bhai">
+                <button type="submit">send</button>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aspernatur culpa est quisquam id quidem
+                atque in iste officiis dolores! Quis esse modi velit error voluptatem recusandae nam enim maiores?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti mollitia dolor illo earum nulla
+                reiciendis dignissimos adipisci dolorem. Pariatur aliquid repudiandae adipisci quod quis nobis
+                voluptatem vitae est illo natus!</p>
+        </div>
+    </div>
+</body>
+
+</html>
