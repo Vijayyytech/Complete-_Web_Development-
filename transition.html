@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in Html</title>
+    <style>
+        body{
+            background-color: black;
+        }
+.container{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+#card{
+   border: 1px solid green;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin: 50px;
+  /*  transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in;
+    justify-content: center;*/
+    text-align: center;
+
+    transition: all 1s ease-in-out .3s;
+}
+#card2{
+   border: 1px solid green;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin: 50px;
+  /*  transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in;
+    justify-content: center;*/
+    text-align: center;
+
+    transition: all 1s ease-in-out .3s;
+}
+#card:hover{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    font-size: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <h2>This is card</h2>
+        </div>
+        <div id="card2">
+            <h2>This is 2ndt</h2>
+        </div>
+    </div>
+</body>
+</html>
