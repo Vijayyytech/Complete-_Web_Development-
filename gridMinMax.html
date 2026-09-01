@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Min Max</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+
+        grid-template-areas: 
+          'navbar navbar navbar navbar'
+          'section section section aside'
+          'footer footer footer footer'  ;
+
+      /*  grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px 100px 300px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    }
+    .box{
+        border: 1px solid red;
+        padding: 55px;
+        
+        background-color: rgb(64, 209, 153);
+    } 
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    #footer{
+        grid-area: footer;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="box"> 
+            Home About Call Order
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maxime expedita. Commodi quibusdam necessitatibus accusamus doloremque. Commodi tenetur necessitatibus praesentium voluptatem. Aut ducimus facilis, tempore et a magni vitae ex? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam qui dolorem mollitia dolor consequatur, voluptas perspiciatis ducimus aliquam saepe. Porro, unde quibusdam ducimus sit harum sunt ipsa non voluptatum eius, dolorem neque impedit nisi suscipit blanditiis similique aliquam esse. Commodi eveniet dolorum vel ex et cumque, velit aliquam inventore odio, corporis quia molestiae? Earum voluptates reprehenderit saepe consectetur minima unde ullam in voluptatum nemo totam, corrupti iusto vero expedita aspernatur perspiciatis ea. Ea sequi, aliquam nam mollitia dolorum, eius minus enim debitis voluptatum eum iure totam velit nihil et placeat! Amet unde harum, ad repellendus ex sapiente mollitia quas facere.
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nemo pariatur porro unde similique rem minus omnis minima repellendus quia debitis doloribus aut maiores commodi, autem sint quaerat vero consectetur?
+        </div>
+
+        <div id="footer" class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, nihil unde aspernatur tempora minus nemo quidem dolores voluptatibus harum provident quam ratione tempore aperiam rerum. Vel doloribus sequi rerum dolores aliquid sed repellat, a totam expedita hic consectetur repellendus cum quod, ea, temporibus cumque autem repudiandae iste sint similique! Nam?
+        </div>
+       <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div> -->
+    </div>
+</body>
+</html>
