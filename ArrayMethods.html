@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <button onclick="pop()">POP</button>
+    <button onclick="push()">PUSH</button>
+    <button onclick="slice()">SLICE</button>
+    <button onclick="reverse()">REVERSE</button>
+</body>
+<script>
+    var fruits = ["apple", "banana", "orange", "grapes"];
+    var name = ["Ajay", "Ram", "jay"];
+    // var shop = fruits.concat(name);
+    // var result = fruits.valueOf();
+    // alert(Array.isArray(fruits));
+    // document.write("<h1>" +flag+ "</h1");
+    // document.write(shop);
+    //  document.write(result);
+    //document.write()
+    var demo = fruits;
+    document.getElementById("demo").innerHTML = demo;
+     function pop() {
+        demo.pop();
+        document.getElementById("demo").innerHTML = demo;
+   } 
+    function push() {
+        var x = prompt("please enter a fruit"," ");
+        demo.push(x);
+        document.getElementById("demo").innerHTML = demo;
+    }
+    function slice(){
+      var x=  demo.slice(2);
+        document.getElementById("demo").innerHTML=x;
+    }
+    function reverse(){
+        demo.reverse();
+        document.getElementById("demo").innerHTML=demo;
+    }
+</script>
+
+</html>
